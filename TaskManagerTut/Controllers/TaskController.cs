@@ -12,7 +12,7 @@ namespace TaskManagerTut.Controllers
     {
         private static IList<TaskModel> tasks = new List<TaskModel>()
         {
-            new TaskModel(){ TaskId = 1, Name = "Wizyta u lekarza", Description = "Godzina 17.00", Done = false},
+            new TaskModel(){ TaskId = 1, Name = "Wizyta u mechanika", Description = "Godzina 17.00", Done = false},
             new TaskModel(){ TaskId = 2, Name = "Zrobić zakupy", Description = "Pieczywo itp.", Done = false},
             new TaskModel(){ TaskId = 3, Name = "Nauczyć się asynchronicznego programowania", Description = "Jak najszybciej", Done = false},
         };
@@ -26,7 +26,7 @@ namespace TaskManagerTut.Controllers
         // GET: Task/Details/5
         public ActionResult Details(int id)
         {
-            return View(tasks.FirstOrDefault(x=> x.TaskId == id));
+            return View(tasks.FirstOrDefault(x => x.TaskId == id));
         }
 
         // GET: TaskController/Create
